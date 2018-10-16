@@ -45,6 +45,7 @@ class SpriteSelectorItem extends React.Component {
         return false;
     }
     getCostumeUrl () {
+        console.log(this.props.assetId);
         if (this.props.costumeURL) return this.props.costumeURL;
         if (!this.props.assetId) return null;
 

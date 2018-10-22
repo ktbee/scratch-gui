@@ -46,9 +46,9 @@ const vmManagerHOC = function (WrappedComponent) {
             return this.props.vm.loadProject(projectData)
                 .then(() => {
                     this.props.onLoadedProject(loadingState);
-                    console.log('ON LOADED PROJECT');
-                    console.log('runtime.targets:');
-                    console.log(this.props.vm.runtime.targets);
+                    // console.log('ON LOADED PROJECT');
+                    // console.log('runtime.targets:');
+                    // console.log(this.props.vm.runtime.targets);
                 })
                 .catch(e => {
                     // Need to catch this error and update component state so that

@@ -46,7 +46,31 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+// All emojis designed by OpenMoji – the open-source emoji and icon project. License: CC BY-SA 4.0
+import fabIconURL from './fab/fab.png';
+import fabInsetIconURL from './fab/tools.svg';
+
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Fab"
+                description="Name for the 'Fab' extension"
+                id="gui.extension.fab.name"
+            />
+        ),
+        extensionId: 'fab',
+        iconURL: fabIconURL,
+        insetIconURL: fabInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Save designs for use in a fab lab."
+                description="Description for the 'Fab' extension"
+                id="gui.extension.fab.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
